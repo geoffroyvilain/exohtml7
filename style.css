@@ -1,3 +1,12 @@
 legend.legende1 {
   background-color: #2574A9
 }
+legend.legende2 {
+  background-color: #9A12B3
+}
+legend.legende3 {
+  background-color: #DB0A5B
+}
+ul {
+  list-style-type: circle;
+}
