@@ -8,20 +8,23 @@
     <link href="style.css" rel="stylesheet" media="all" type="text/css">
   </head>
   <body>
-    <table>
+      <form method="post" action="traitement.php">
+      <fieldset class="legende1">
       <legend class="legende1">Votre identité</legend>
-      <ol>
-        <form method="post" action="traitement.php">
+        <ol>
           <li><label for="nom">Nom :</label>
           <input type="text" id="name" name="user_name" placeholder="Nom"/></li>
           <li><label for="prénom">Prénom :</label>
           <input type="text" id="forname" name="user_forname" placeholder="Prénom"/></li>
           <li><label for="adresse mail">Adresse mail :</label>
           <input type="email" id="mail" name="user_mail" placeholder="Adresse mail"/></li>
-      </ol>
+        </ol>
+      </form>
+      </fieldset>
+      <form method="post" action="traitement.php">
+      <fieldset class="legende2">
       <legend class="legende2">Adresse de livraison</legend>
       <ol>
-        <form method="post" action="traitement.php">
           <li><label for="Adresse">Adresse :</label>
           <textarea name="Adresse" id="Adresse"></textarea>
           <li><label for="Code postal">Code postal :</label>
@@ -29,21 +32,26 @@
           <li><label for="ville">Ville :</label>
           <input type="text" id="mail" name="user_ville" placeholder="Ville"/></li>
       </ol>
+      </form>
+      </fieldset>
+      <form method="post" action="traitement.php">
+      <fieldset class="legende3">
       <legend class="legende3">Informations de règlement</legend>
-      <ol>
-        <form method="post" action="traitement.php">
-          <li><label for="Type carte">Type de carte bancaire :</label>
+        <ol>
+        <li><label for="Type carte">Type de carte bancaire :</label>
           <ul>
-            <li>Visa</li>
-            <li>Mastercard</li>
-          </ul>  
-          <li><label for="numéro carte">Numéro de carte :</label>
-          <input type="text" id="numéro carte" name="user_numero carte" placeholder="Numéro de carte"/></li>
-          <li><label for="code sécurité">Code de sécurité :</label>
-          <input type="text" id="code sécurité" name="user_code" placeholder="Code de sécurité"/></li>
-          <li><label for="nom titulaire">Nom de titulaire :</label>
-          <input type="text" id="nom titulaire" name="user_titulaire" placeholder="Nom du titulaire"/></li>
-      </ol>
-    </table>
+            <input type="radio" name="radio1" value="radio1"><label>VISA</label><br>
+            <input type="radio" name="radio1" value="radio1"><label>MASTERCARD</label>
+          </ul>
+        <li><label for="numéro carte">Numéro de carte :</label>
+        <input type="text" id="numéro carte" name="user_numero carte" placeholder="Numéro de carte"/></li>
+        <li><label for="code sécurité">Code de sécurité :</label>
+        <input type="text" id="code sécurité" name="user_code" placeholder="Code de sécurité"/></li>
+        <li><label for="nom titulaire">Nom de titulaire :</label>
+        <input type="text" id="nom titulaire" name="user_titulaire" placeholder="Nom du titulaire"/></li>
+        </ol>
+      </fieldset>
+        </form>
+      <button type="submit" class="button">J'achète !</button>
   </body>
 </html>

@@ -1,8 +1,18 @@
+fieldset.legende1 {
+  background-color: #2574A9;
+  margin-top: 20px;
+}
 legend.legende1 {
-  background-color: #2574A9
+  background-color: #2574A9;
+}
+fieldset.legende2 {
+  background-color: #9A12B3;
 }
 legend.legende2 {
-  background-color: #9A12B3
+  background-color: #9A12B3;
+}
+fieldset.legende3 {
+  background-color: #DB0A5B;
 }
 legend.legende3 {
   background-color: #DB0A5B
