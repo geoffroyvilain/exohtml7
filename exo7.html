@@ -2,47 +2,46 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <style media="screen">
-    </style>
     <title>Exo7</title>
-    <link href="style.css" rel="stylesheet" media="all" type="text/css">
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-      <form method="post" action="traitement.php">
-      <fieldset class="legende1">
+      <form> <!--TOUJOURS ACCOMPAGNE BALISE METHOD ET ACTION-->
+      <fieldset class="legende1"> <!--TOUJOURS SUIVI PAR UNE LEGENDE-->
       <legend class="legende1">Votre identité</legend>
         <ol>
-          <li><label for="nom">Nom :</label>
-          <input type="text" id="name" name="user_name" placeholder="Nom"/></li>
-          <li><label for="prénom">Prénom :</label>
-          <input type="text" id="forname" name="user_forname" placeholder="Prénom"/></li>
-          <li><label for="adresse mail">Adresse mail :</label>
-          <input type="email" id="mail" name="user_mail" placeholder="Adresse mail"/></li>
+          <li><label for="name">Nom :</label>   <!--FOR = REFERENCE A L'INPUT DU DESSOUS, DOIT ETRE IDENTIQUE--><!-- FOR SERT AUSSI COMME ALT POUR MALVOYANT-->
+          <input type="text" id= "name" name="user_name" placeholder="Nom"/></li>     <!--PLACEHOLDER = AFFICHAGE EN ATTENTE DU MASQUE SAISI(PREREMPLI EN GRIS)-->
+          <li><label for="firstname">Prénom :</label>    <!--ID OU NAME OU FORT ET DE MANIERE GENERALE TOUJOURS EN ANGLAIS-->
+          <input type="text" id="firstname" name="user_firstname" placeholder="Prénom"/></li>
+          <li><label for="mailBox">Adresse mail :</label>
+          <input type="email" id="mailBox" name="user_mail" placeholder="Adresse mail"/></li>
         </ol>
       </form>
       </fieldset>
-      <form method="post" action="traitement.php">
+      <form>
       <fieldset class="legende2">
       <legend class="legende2">Adresse de livraison</legend>
       <ol>
-          <li><label for="Adresse">Adresse :</label>
-          <textarea name="Adresse" id="Adresse"></textarea>
-          <li><label for="Code postal">Code postal :</label>
-          <input type="text" id="forname" name="user_forname" placeholder="Code postal"/></li>
-          <li><label for="ville">Ville :</label>
-          <input type="text" id="mail" name="user_ville" placeholder="Ville"/></li>
+          <li><label for="Adress">Adresse :</label>
+          <textarea rows="5" cols="14"></textarea>
+          <li><label for="postalN">Code postal :</label>
+          <input type="text" id="postalN" name="user_postalN" placeholder="Code postal"/></li>
+          <li><label for="town">Ville :</label>
+          <input type="text" id="town" name="user_town" placeholder="Ville"/></li>
       </ol>
       </form>
       </fieldset>
-      <form method="post" action="traitement.php">
+      <form>
       <fieldset class="legende3">
       <legend class="legende3">Informations de règlement</legend>
         <ol>
-        <li><label for="Type carte">Type de carte bancaire :</label>
-          <ul>
-            <input type="radio" name="radio1" value="radio1"><label>VISA</label><br>
-            <input type="radio" name="radio1" value="radio1"><label>MASTERCARD</label>
-          </ul>
+        <li><label for="CB">Type de carte bancaire :</label>
+          <div class="left">
+            <imput id="cardVisa" name="chooce" type="radio">
+            <label for="cardVisa" class="side-label">VISA</label><br>
+            <imput id="cardMaster" name="chooce" type="radio">
+            <label for="cardMaster" class="side-label">MASTERCARD</label>
         <li><label for="numéro carte">Numéro de carte :</label>
         <input type="text" id="numéro carte" name="user_numero carte" placeholder="Numéro de carte"/></li>
         <li><label for="code sécurité">Code de sécurité :</label>
